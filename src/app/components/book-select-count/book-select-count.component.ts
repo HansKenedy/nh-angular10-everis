@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { IBook } from '../book';
 
 @Component({
   selector: 'app-book-select-count',
@@ -8,6 +9,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class BookSelectCountComponent implements OnInit {
 
   @Input() totalBooks: number;
+  @Input() cantidaSeleccionados: IBook;
   constructor() { }
 
   ngOnInit(): void {
